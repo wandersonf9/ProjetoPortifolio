@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @wandersonf9
 - 👀 I’m interested in Desenvolvimento de softwares
-- 🌱 I’m currently learning ... Angular
+- 🌱 I’m currently learning ... JavaScript
 - 💞️ I’m looking to collaborate on ... gerenciamento de projetos 
 - 📫 How to reach me 61 991122654
 
