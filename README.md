@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @wandersonf9
-- 👀 I’m interested in Desenvolvimento de softwares
-- 🌱 I’m currently learning ... JavaScript
-- 💞️ I’m looking to collaborate on ... gerenciamento de projetos 
-- 📫 How to reach me 61 991122654
+- 👋 Olá, Eu sou Wanderson 
+- 👀 Sou formado em análise e desenvolvimento de sistemas.
+- 🌱 Atualmente estou me especializando em desenvolvimento Web
+- 💞️ Estou buscando participação em projetos pequenos para que eu possa desenvolver minhas habilidades.
+- 📫 Voce pode me encontar no Whatsapp (61) 99112-2654 ou wandersonarthur906@gmail.com
 
 <!---
 wandersonf9/wandersonf9 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
