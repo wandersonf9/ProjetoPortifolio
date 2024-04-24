@@ -56,18 +56,21 @@ header{
 
 }
 
-.logo {
-    height: 70px;
-    width: 70px;
+
+img{
+    height: 120px;
+    width:120px;
     background: transparent;
     border: 1px solid #2ecc71;
     color: #2ecc71;
-    border-radius: 50px;
+    border-radius: 60px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 20px;
     cursor: pointer;
+    justify-items:auto;
 }
 
 button{
@@ -233,20 +236,36 @@ footer{
 }
 
 @media screen and (max-width: 630px){
+
+    * {
+        justify-content: center;
+        text-align: center;
+    }
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column;
     }
+    header{
+        justify-content: center;
+    }
 
+    img {
+       width: auto;
+       display: flex;
+    }
 
     /* Cabeçalho */
     .cabeçalho-link,.btn-contato{
         display: none;
 
     }
+    .redes-sociais{
+        width: auto;
+        
+    }
 
     .container-text{
-    padding: 20px 0 0 20px;
+    padding: 20px 5px;
     
     }
     .background{
