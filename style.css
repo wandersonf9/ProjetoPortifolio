@@ -17,7 +17,7 @@
 }
 
 body {
-    overflow:auto ;
+    overflow:auto;
 }
 
 .background{
@@ -26,7 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
 }
 
 header{
@@ -120,11 +120,17 @@ button:hover{
 }
 
 .redes-sociais{
+    display: flex;
     padding: 10px;
     margin-top: 20px;
     background-color: gray;
-    width: 20%;
-    border-radius: 5px;    
+    width:fit-content;
+    border-radius: 5px;
+    gap: 10px;
+    background-color: rgba(245, 245, 245, 0.411);
+}
+.fa-brands{
+    color:#2ecc71;
 }
 
 .btn{
@@ -132,7 +138,8 @@ button:hover{
 }
 
 footer{
-    
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -140,22 +147,21 @@ footer{
     border: none;
     color: var(--color-neutral-40);
     margin-bottom: 0;
-    height: 25vh;
-    width: 100vw;
+    height: fit-content;
+    width: 100%;
     display: flex;
+    background-color: var(--color-neutral-10);
 
 }
 .footer_link{
     text-decoration: none;
 }
 #footer_content{
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 3rem 3.5rem;
-    padding-top: 1%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0px ;
+    
 }
 #footer_social_media{
     display: flex;
@@ -191,6 +197,7 @@ footer{
     align-items: center;
 }
 .footer_list{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -205,18 +212,30 @@ footer{
 
 .footer_copyright{
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     align-content: center;
     justify-content: center;
     background-color: #2DA3D3;
+    text-align: center;
+}
+
+#footer_subscribe{
+    display: flex; 
+    flex-direction: column;
+    gap: 8px;
+}
+
+#input_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
 }
 
 @media screen and (max-width: 630px){
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column;
-
     }
 
 
@@ -231,35 +250,44 @@ footer{
     
     }
     .background{
-        display:flex;
-        height: 70vh;
+        height: 100vh;
         width: 100vw;
         
     }
     footer{
+        box-sizing: border-box;
         display: flex;
-        height: 30vh;
         width: 100vw;
+        height: 100%;
+        background-color: var(--color-neutral-10);
+        gap: 30px;
 
     }
-    .redes-sociais{
-       display: flex;
-       width: 35vw;
-       gap: 10px;
+
+    #footer_contacts{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #footer_content{
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         display: flex;
         height: 100vh;
-        border: none;
         padding: 10px 0px 0px 5px;
-        gap: 0.1rem;
+        gap: 2rem;
         height: 100vh;
         width: 100vw;
         
     }
 
-    .footer_subscribe{
+    #footer_subscribe{
+        text-align: center;
+        align-items: center;
         display: flex;
         justify-content:center;
     }
@@ -274,5 +302,12 @@ footer{
         display: flex;
         width: 30vw;
         height: 100vh;
+    }
+    .footer_list{
+        text-align: center;
+    }
+    #input_group{
+        align-items: center;
+        gap: 10px;
     }
 }
