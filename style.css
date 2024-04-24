@@ -76,7 +76,7 @@ button{
     background: transparent;
     border: solid 1px #2ecc71;
     padding: 5px;
-    font-size: 12px;
+    font-size: 15px;
     width: 150px;
     cursor: pointer;
 }
@@ -88,7 +88,7 @@ button:hover{
 }
 
 .container-text{
-    padding: 90px 0 0 130px;
+    padding: 50px 0 0 50px;
     color: white;
     text-shadow: 0.1em 0.1em #333
     
@@ -96,11 +96,12 @@ button:hover{
 
 .text h3{
     color: fff;
-    font-size: 22px;
+    font-size: 26 px;
 }
 .text h1{
     color: fff;
     margin-top: 18px;
+    font-size: 40px;
 }
 
 .text span{
@@ -108,7 +109,7 @@ button:hover{
 }
 .text p{
     color: fff;
-    font-size: 18px;
+    font-size:22px;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -148,6 +149,8 @@ footer{
     text-decoration: none;
 }
 #footer_content{
+    width: 100vw;
+    height: 100vh;
     background-color: var(--color-neutral-10);
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -203,7 +206,52 @@ footer{
 .footer_copyright{
     display: flex;
     width: 100vw;
+    height: 100vh;
     align-content: center;
     justify-content: center;
     background-color: #2DA3D3;
+}
+
+@media screen and (max-width: 630px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+
+    }
+
+
+    /* Cabeçalho */
+    .cabeçalho-link,.btn-contato{
+        display: none;
+
+    }
+
+    .container-text{
+    padding: 20px 0 0 40px;
+    
+    }
+    .background{
+        width: 100%;
+        height: 68vh;
+    }
+    footer{
+        display: flex;
+        height: 32vh;
+        width: 100vw;
+        padding: 0px 0px 0px 0px;
+       
+        
+    }
+    .redes-sociais{
+       width: 35vw;
+       gap: 8px;
+
+    }
+    #footer_content{
+        border: none;
+        flex-direction: ;
+        padding: 20px 0px 0px 0px;
+        gap: 0.3rem;
+    }
+    
 }
