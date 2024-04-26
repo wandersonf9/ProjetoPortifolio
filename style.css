@@ -163,7 +163,7 @@ footer{
     width: 100%;
     display: flex;
     background-color: var(--color-neutral-10);
-    
+
 }
 .footer_link{
     text-decoration: none;
@@ -259,6 +259,9 @@ footer{
     header{
         justify-content: center;
     }
+    body{
+        height: 100%;
+    }
 
     /* Cabeçalho */
     .cabeçalho-link,.btn-contato{
@@ -303,7 +306,6 @@ footer{
         align-items: center;
         flex-direction: column;
         display: flex;
-        height: 100vh;
         padding: 10px 0px 0px 5px;
         gap: 2rem;
         height: 100vh;
