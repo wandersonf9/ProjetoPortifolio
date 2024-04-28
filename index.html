@@ -12,14 +12,13 @@
 </head>
 <body>
     
-    <div class="background"><!--Fundo do site-->
+    <div class="background"> <!--Fundo do site-->
         <header >
             <div class="logo"><!--Logo inicio-->
                 <img src="Img/Perfil pink.jpg" alt="Foto perfil">
             </div>
-            <div class="Foto-Pefil">
-                
-            </div>
+            <button onclick="animarMenu()" id="btn-mobile"> <i class="fa-solid fa-bars"> </i></button>
+            
             <div class="cabeçalho-link"> <!--Atalhos do Cabeçalho-->
                 <li>
                 <a href="#"> Home </a>
@@ -37,32 +36,25 @@
                 <a href=" link https://wa.me/5561991122654"><button>Meu contato</button></a>
                 </div>
             </div> <!-- cabeçalho link-->
-            <nav class="menu-mobile">
-                <ul>
+            
+
+            <nav class="menu-mobile" id="menu-mobile">
+                
+                <ul id="menu-list">
+                    <a href="#"> Home </a>
+                    </li>
                     <li>
-                        <a href="#"> Home </a>
-                        </li>
-                        <li>
-                        <a href="#"> Sobre </a>
-                        </li>
-                        <li>
-                        <a href="#"> Serviços </a>
-                        </li>
-                        <li>
-                        <a href="#"> Trabalho </a>
-                        </li>
-                        <div class="btn-contato">
-                        <a href=" link https://wa.me/5561991122654"><button>Meu contato</button></a>
-                        </div>
+                    <a href="#"> Sobre </a>
+                    </li>
+                    <li>
+                    <a href="#"> Serviços </a>
+                    </li>
+                    <li>
+                    <a href="#"> Trabalho </a>
                 </ul>
             </nav>
+            
         </header>
-
-        <div class="menu-bolile">
-            <div class="btn-fechar">
-                <i class="fa-thin fa-circle-xmark"></i>
-            </div>
-        </div>
         <div class="container-text">
             <div class="text">
                 <h3>Olá, Galera!</h3> <!--texto principal-->
@@ -153,6 +145,7 @@
         </div>
 
     </footer>
-    
+    <script src="Menu.js"></script>
+
 </body>
 </html>
