@@ -20,26 +20,31 @@
             <button onclick="animarMenu()" id="btn-mobile"> <i class="fa-solid fa-bars"> </i></button>
             
             <nav class="cabeçalho-link"> <!--Atalhos do Cabeçalho-->
+                
+            
                 <li>
-                <a href="#"> Home </a>
+                    <a href="#"> Home </a>
                 </li>
                 <li>
-                <a href="#"> Sobre </a>
+                    <a href="#"> Sobre </a>
                 </li>
-                <li>
-                <a href="#"> Serviços </a>
-                    <ul>
+                <li class="dropdown">
+                    <a href="#"> Serviços </a>
+
+                    <ul class="dropdown-menu">
                         <li>Desenvolvimento WEB</li>
                         <li>Desenvolvimento Aplicaçãp mobile</li>
                         <li>Desenvolvimento de banco de Dados</li>
                     </ul>
+
                 </li>
-                <li>
-                <a href="#"> Saiba mais </a>
-                    <ul>
-                        <li>fa-facebook</li>
-                        <li>fa-instagram</li>
-                        <li>fa-linkedin</li>
+               
+                <li class="dropdown">
+                <a href="#"> Redes-sociais </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="https://www.facebook.com/wandersonf9/" target="_blank">Facebook</a></li>
+                        <li> <a href="https://www.instagram.com/wandersonf9/" target="_blank">Instagram</a></li>
+                        <li> <a href="https://www.linkedin.com/in/wandersonf9/" target="_blank">Linkedin</a></li>
                     </ul>
                 </li>
                 <div class="btn-contato">
@@ -48,7 +53,7 @@
             </nav> <!-- cabeçalho link-->
             <nav class="menu-mobile" id="menu-mobile">
                 
-                <ul id="menu-list">
+                <ul id="menu-list" class="dropdown">
                     <a href="#"> Home </a>
                     </li>
                     <li>
