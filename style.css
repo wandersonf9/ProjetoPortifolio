@@ -32,7 +32,7 @@ body {
     background-position: center;
     width: 100%;
     flex: content;
-    gap: 5px;
+    gap: 5rem;
 }
 
 header{
