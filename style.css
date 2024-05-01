@@ -90,12 +90,13 @@ display: none;
     justify-content: left;
 
 }
-.dropdown-menu li {
+.dropdown-menu li a{
     color: white;
 
 }
 .dropdown:hover .dropdown-menu{
     display: block;
+    transition: all 0.5s;
 }
 
 img{
@@ -319,7 +320,7 @@ footer{
     .menu-mobile{
         display: block;
         margin-top: 60px;
-        width: 50%;
+        width: 60%;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -341,6 +342,11 @@ footer{
     .menu-mobile.abrir{
         visibility: visible;
         height:100%;
+    }
+    .dropdown-menu{
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.635);
+
     }
     #btn-mobile{
         display: flex;
