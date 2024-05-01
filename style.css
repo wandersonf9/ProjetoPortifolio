@@ -62,9 +62,6 @@ display: none;
     color: white;
     font-size: 18px;
     align-items: center;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .cabeçalho-link a:hover {
@@ -84,14 +81,12 @@ display: none;
     width: 20vw;
     gap:1rem;
     padding: 15px;
-   justify-content: center;
     text-align: center;
-
 }
 .dropdown-menu li:hover{
     display: flex;
     color: rgb(19, 167, 117);
-    transition: 0.3s all;
+    transition: 1s all;
     justify-content: left;
 
 }
@@ -144,13 +139,12 @@ button:hover{
 }
 
 .text h3{
-    color: fff;
-    font-size: 26 px;
+    color:fff;
+    font-size: 20px;
 }
 .text h1{
     color: fff;
-    margin-top: 18px;
-    font-size: 40px;
+    margin-top: 16px;
 }
 
 .text span{
@@ -158,7 +152,7 @@ button:hover{
 }
 .text p{
     color: fff;
-    font-size:22px;
+    font-size:18px;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -172,7 +166,6 @@ button:hover{
     display: flex;
     padding: 10px;
     margin-top: 20px;
-    background-color: gray;
     width:fit-content;
     border-radius: 5px;
     gap: 10px;
@@ -359,31 +352,23 @@ footer{
         transition: 1s;
         align-items: center;
     }
+    .btn-contato a button{
+        border: 3rem;
+        background: rgba(255, 255, 255, 0.837);
+        width: 80px;
+    }
 
     #menu-list{
         display: flex;
         flex-direction: column;
         gap: 40px;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .dropdown-menu{
-        
-    }
-    .dropdown-menu a{
-        display: block;
-    }
-
-    .menu-list.show{
-        display: block;
-    
-    }
-    
-
     .redes-sociais{
         width: auto;
         
     }
-
     footer{
         display: flex;
         flex-direction: column;
@@ -393,7 +378,6 @@ footer{
         align-content: center;
         align-items: center;
         box-sizing: border-box;
-
     }
 
     #footer_contacts{
