@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Descrição do Site">
@@ -7,23 +8,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="style.css"> <!--link do CSS-->
+
     <title>Login</title>
 
 </head>
+
 <body>
-    
-    <div class="background"> <!--Fundo do site-->
-        <header >
-            <div class="logo"><!--Logo inicio-->
-                <img src="Img/Perfil pink.jpg" alt="Foto perfil">
+    <header>
+        <div class="logo"><!--Logo inicio-->
+            <img src="Img/Perfil pink.jpg" alt="Foto perfil">
+        </div>
+        <button onclick="animarMenu()" id="btn-mobile"> <i class="fa-solid fa-bars"> </i></button>
+
+        <nav class="cabeçalho-link"> <!--Atalhos do Cabeçalho-->
+
+
+            <li>
+                <a href="#"> Home </a>
+            </li>
+            <li>
+                <a href="formulario/formulario.html"> Formulario </a>
+            </li>
+            <li class="dropdown">
+                <a href="formulario/formulario.html" target="_blank"> Serviços </a>
+
+                <ul class="dropdown-menu">
+                    <li>Desenvolvimento WEB</li>
+                    <li>Desenvolvimento Aplicaçãp mobile</li>
+                    <li>Desenvolvimento de banco de Dados</li>
+                </ul>
+
+            </li>
+
+            <li class="dropdown">
+                <a href="#"> Redes-sociais </a>
+                <ul class="dropdown-menu">
+                    <li> <a href="https://www.facebook.com/wandersonf9/" target="_blank">Facebook</a></li>
+                    <li> <a href="https://www.instagram.com/wandersonf9/" target="_blank">Instagram</a></li>
+                    <li> <a href="https://www.linkedin.com/in/wandersonf9/" target="_blank">Linkedin</a></li>
+                </ul>
+            </li>
+            <div class="btn-contato">
+                <a href="https://wa.me/5561991122654" target="_blank">Meu contato</a>
             </div>
-            <button onclick="animarMenu()" id="btn-mobile"> <i class="fa-solid fa-bars"> </i></button>
-            
-            <nav class="cabeçalho-link"> <!--Atalhos do Cabeçalho-->
-                
-            
-                <li>
-                    <a href="#"> Home </a>
+        </nav> <!-- cabeçalho link-->
+        <nav class="menu-mobile" id="menu-mobile">
+
+            <ul id="menu-list" class="dropdown">
+                <a href="#"> Home </a>
                 </li>
                 <li>
                     <a href="#"> Sobre </a>
@@ -38,113 +70,90 @@
                     </ul>
 
                 </li>
-               
+
                 <li class="dropdown">
-                <a href="#"> Redes-sociais </a>
+                    <a href="#"> Redes-sociais </a>
                     <ul class="dropdown-menu">
                         <li> <a href="https://www.facebook.com/wandersonf9/" target="_blank">Facebook</a></li>
                         <li> <a href="https://www.instagram.com/wandersonf9/" target="_blank">Instagram</a></li>
                         <li> <a href="https://www.linkedin.com/in/wandersonf9/" target="_blank">Linkedin</a></li>
                     </ul>
                 </li>
-                <div class="btn-contato">
+
+            </ul>
+            <div class="btn-contato">
                 <a href="https://wa.me/5561991122654" target="_blank"> <button>Meu contato</button> </a>
-                </div>
-            </nav> <!-- cabeçalho link-->
-            <nav class="menu-mobile" id="menu-mobile">
-                
-                <ul id="menu-list" class="dropdown">
-                    <a href="#"> Home </a>
-                    </li>
-                    <li>
-                    <a href="#"> Sobre </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#"> Serviços </a>
-    
-                        <ul class="dropdown-menu">
-                            <li>Desenvolvimento WEB</li>
-                            <li>Desenvolvimento Aplicaçãp mobile</li>
-                            <li>Desenvolvimento de banco de Dados</li>
-                        </ul>
-    
-                    </li>
-                    
-                    <li class="dropdown">
-                    <a href="#"> Redes-sociais </a>
-                        <ul class="dropdown-menu">
-                            <li> <a href="https://www.facebook.com/wandersonf9/" target="_blank">Facebook</a></li>
-                            <li> <a href="https://www.instagram.com/wandersonf9/" target="_blank">Instagram</a></li>
-                            <li> <a href="https://www.linkedin.com/in/wandersonf9/" target="_blank">Linkedin</a></li>
-                        </ul>
-                    </li>
+            </div>
+        </nav>
 
-                </ul>
-                <div class="btn-contato">
-                    <a href="https://wa.me/5561991122654" target="_blank"> <button>Meu contato</button> </a>
-                    </div>
-            </nav>
-            
-        </header>
+    </header>
+    <main class="background"> <!--Fundo do site-->
         <!--texto principal-->
-        <div class="container-text">
-            <div class="text">
-                <h3>Olá, Galera!</h3> 
-                <h1>Eu sou <span>Wanderson F. de souza</span> </h1>
-                <p> Sou Formado em análise e desenvolvimento de sistemas,
-                    <br>estou me especializando em desenvolvimento WEB
-                </p>
-                <!--icones de redes sociais-->
-                <div class="redes-sociais"> 
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div><!-- Final dos icones Redes sociais-->
-                <button class="btn">Sobre Mim</button>
-            </div><!--Final Div text-->
 
+        
+        <div class="text">
+            <h3>Olá, Galera!</h3>
+            <h1>Eu sou <span>Wanderson F. de souza</span> </h1>
+            <p> Sou Formado em análise e desenvolvimento de sistemas,
+                <br>estou me especializando em desenvolvimento WEB
+            </p>
+            <!--icones de redes sociais-->
+            <div class="redes-sociais">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div><!-- Final dos icones Redes sociais-->
+            <button class="btn">Sobre Mim</button>
+        </div><!--Final Div text-->
+
+
+        <div class="slide-pai"><!-- Inicio do carrossel-->
             
-            <div class="slide-pai"><!-- Inicio do carrossel-->
+
+            <div class="slides">
+
                 <!-- Radio buttons-->
-                <input class="radio-button" type="radio" name="radio-btn" id="radio1">
-                <input class="radio-button" type="radio" name="radio-btn" id="radio2">
-                <input class="radio-button" type="radio" name="radio-btn" id="radio3">
+            <div class="radio-content">
+                <input type="radio" name="radio-btn1" id="radio1">
+                <input type="radio" name="radio-btn2" id="radio2">
+                <input type="radio" name="radio-btn3" id="radio3">
+                </div>
                 <!--Fim Radio Buttons-->
-               
-                <div class="slides">
-       
-                   <!-- Slide images-->
-                   <div class="slide first">
-                       <img src="Img/HTML.png" alt="Imagem 1">
-                   </div>
-                   <div class="slide first">
-                       <img src="Img/CSS 3.png" alt="Imagem 2">
-                   </div>
-                   <div class="slide first">
-                       <img src="Img/JS.png" alt="Imagem 3">
-                   </div>
-                   <!--Final do slider images-->
-   
-                   <!--Navigation auto-->
-                   <div class="navigation-auto">
-                       <div class="auto-btn" id="auto-btn1"></div>
-                       <div class="auto-btn" id="auto-btn2"></div>
-                       <div class="auto-btn" id="auto-btn3"></div>
-                   </div>
-                   <!--Final navigation auto-->
-                   
-               </div>
-               <div class="manual-navigation">
-                   <label for="radio1" class="manual-btn"></label>
-                   <label for="radio2" class="manual-btn"></label>
-                   <label for="radio3" class="manual-btn"></label>
-               </div>
-           </div><!--Final do carrosel-->
-        </div><!--Final contener-text-->
-       
-    </div><!--background-->
+
+                <!-- Slide images-->
+                <figure class="slide first">
+                    <img src="Img/HTML.png" alt="Imagem 1">
+                </figure>
+                <figure class="slide first">
+                    <img src="Img/CSS 3.png" alt="Imagem 2">
+                </figure>
+                <figure class="slide first">
+                    <img src="Img/JS.png" alt="Imagem 3">
+                </figure>
+                <!--Final do slider images-->
+
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn" id="auto-btn1"></div>
+                    <div class="auto-btn" id="auto-btn2"></div>
+                    <div class="auto-btn" id="auto-btn3"></div>
+                </div>
+                <!--Final navigation auto-->
+
+            </div>
+
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div><!--Final do carrosel-->
+
+
+    </main><!--background-->
     <footer>
         <div id="footer_content"> <!--Rodapé-->
             <div id="footer_contacts"><!--Icones de contatos-->
@@ -170,11 +179,11 @@
                 </li>
                 <li>
                     <a href="#" class="footer-link"> Adventures</a>
-    
+
                 </li>
                 <li>
                     <a href="#" class="footer-link"> Music</a>
-                    
+
                 </li>
             </ul>
             <ul class="footer_list"><!--List ablog 2-->
@@ -183,23 +192,23 @@
                 </li>
                 <li>
                     <a href="#" class="footer-link"> App</a>
-    
+
                 </li>
                 <li>
                     <a href="#" class="footer-link"> Desktop</a>
-                    
+
                 </li>
                 <li>
                     <a href="#" class="footer-link"> Cloud</a>
-                    
+
                 </li>
             </ul>
-    
+
             <div id="footer_subscribe"><!--Deixe o e-mail-->
                 <h3>Inscreva-se</h3>
-    
+
                 <p>
-                    Deixe aqui seu email <br>para  receber notificaçõs <br> Sobre meu Trabalho
+                    Deixe aqui seu email <br>para receber notificaçõs <br> Sobre meu Trabalho
                 </p>
                 <div id="input_group">
                     <input type="email" id="email">
@@ -208,7 +217,7 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
         <div id="footer_copyright">
             &#169
@@ -219,4 +228,5 @@
     <script src="Menu.js"></script>
 
 </body>
+
 </html>
