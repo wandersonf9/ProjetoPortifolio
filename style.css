@@ -281,7 +281,7 @@ footer {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 800px;
   overflow: hidden;
   align-items: center;
   height: max-content;
@@ -302,6 +302,7 @@ footer {
   height: 30vh;
 }
 .manual-navigation {
+  position: absolute;
   width: 60%;
   display: flex;
   align-self: center;
@@ -368,13 +369,6 @@ footer {
   background-color: #2ecc71;
 }
 
-/* Laptop Pequeno */
-
-/* @media screen and (max-width: 10px) {
-  .background {
-    flex-direction: column;
-  }
-} */
 
 /* Versão------------ Mobile*/
 
